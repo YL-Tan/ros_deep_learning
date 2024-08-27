@@ -77,6 +77,7 @@ bool publish_overlay( uint32_t width, uint32_t height )
 
 	// publish the message
 	overlay_pub->publish(msg);
+	return true;
 }
 
 
@@ -102,6 +103,7 @@ bool publish_mask_color( uint32_t width, uint32_t height )
 
 	// publish the message
 	mask_color_pub->publish(msg);
+	return true;
 }
 
 
@@ -127,6 +129,7 @@ bool publish_mask_class( uint32_t width, uint32_t height )
 
 	// publish the message
 	mask_class_pub->publish(msg);
+	return true;
 }
 
 
